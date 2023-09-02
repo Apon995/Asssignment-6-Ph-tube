@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans to the Qus page</title>
+    <!-- ---tailwind-css-cdn-- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- --font-awsome-cdn-- -->
+    <script src="https://kit.fontawesome.com/4fe709d572.js" crossorigin="anonymous"></script>
+    <!-- --google-fonts-cdn-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-[Inter] w-full ">
+    <main class="w-full flex items-center flex-col py-5 gap-3 px-[4%]">
+        <button onclick="goHome()" class="bg-[#25252533] rounded-md px-5 py-2 text-[#252525] text-xl font-medium"><i
+                class="fa-solid fa-arrow-left"></i> back</button>
+        <!-- --ans-to-the-qus-box -->
+        <section>
+            <div class="space-y-4 shadow-xl  px-5 py-5 rounded-lg md:w-[500px]">
+                <div>
+                    <h1 class="text-2xl text-black font-medium">Qus 1 : <span>Discuss the scope of var, let, and const
+                            ?</span></h1>
+                    <p class="text-xl text-[#252525] font-normal">Ans : <span class="text-base"> var keyword in javascript create global scope variable or let keyword create a block scope variable if we can re assing this variable, let keyword create varibles are mutable and const keyword variable is block scope but we dont't re assign this type variable but but their content can mutable use of the case array and objects ,otherwise const keyword create variable are immutable . </span></p>
+                </div>
+                <div>
+                    <h1 class="text-2xl text-black font-medium">Qus 2 : <span>Tell us the use cases of null and undefined
+                            ?</span></h1>
+                    <p class="text-xl text-[#252525] font-normal">Ans : <span class="text-base">In the javascript null means a empty value and undefined means declared the variable but value is not assign.</span></p>
+                </div>
+                <div>
+                    <h1 class="text-2xl text-black font-medium">Qus 3 : <span>What do you mean by REST API?</span></h1>
+                    <p class="text-xl text-[#252525] font-normal">Ans : <span>Api means Appication programming interface. api is the set of rules that defiend how to connect appication or devies communicate each other, and rest api is those api who follow the Representational State Transfer software arcitecture.</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const goHome = () => {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

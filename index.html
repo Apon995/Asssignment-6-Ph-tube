@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <link rel="icon " type="icon/image" href="./assets/Logo.png" />
+    <!-- --tailwind-css-cdn-- -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- --google-fonts-cdn-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body class="dark:bg-white bg-white min-h-screen font-[Inter] scroll-smooth w-full">
+    <!-- --header-section-- -->
+    <header>
+        <nav class="px-[2%]">
+            <div class="border-b-[2px] py-4 border-[#25252533] flex justify-between items-center">
+                <img src="./assets/Logo.png" class="w-[140px]" />
+                <button onclick="getCatagoryId(undefined,true)"
+                    class="bg-[#25252533] md:block hidden rounded-md px-5 py-2 text-[#252525] font-medium">
+                    Sort by view
+                </button>
+                <button onclick="goQusPage()"
+                    class="bg-[#FF1F3D] rounded-md px-4 py-2 text-white font-medium text-base">
+                    Blog
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- --main-section-- -->
+    <br />
+    <main class="md:px-[2%] px-[4%] pb-10 w-full">
+        <!-- --button-row-- -->
+        <div class="flex justify-center items-center gap-4 flex-wrap text-center w-full" id="btn-container"></div>
+        <br />
+        <div class="text-center pt-[80px] hidden" id="togglespinner">
+            <span class="loading loading-spinner text-black w-[80px]"></span>
+        </div>
+
+        <!-- -catagories-row-- -->
+        <section class="">
+            <div id="display-catagories" class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-6 md:gap-2 gap-4">
+            </div>
+            <div id="notFound-container"></div>
+        </section>
+    </main>
+
+    <script src="./scriptsFile/main.js"></script>
+</body>
+
+</html>
